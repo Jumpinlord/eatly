@@ -88,11 +88,11 @@
   }
 } */
 
-/* @supports(scrollbar-gutter: stable) {
+@supports(scrollbar-gutter: stable) {
 	html {
     scrollbar-gutter: stable;
   }
-} */
+}
 
 .accordion-content[aria-hidden="false"] {
   grid-template-rows: 1fr;
