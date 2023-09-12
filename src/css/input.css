@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('../assets/fonts/Poppins-400.woff2') format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    src: url('../assets/fonts/Poppins-500.woff2') format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 600;
+    src: url('../assets/fonts/Poppins-600.woff2') format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    src: url('../assets/fonts/Poppins-700.woff2') format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: italic;
+    src: url('../assets/fonts/Poppins-Italic.woff2') format('woff2');
+    font-display: swap;
+  }
+}
+
+/* "y" property is for y in svg rect  */
+.burger .line {
+  transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
+  transform-origin: center;
+}
+
+.burger[aria-expanded="true"] .line {
+  transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+}
+
+.burger[aria-expanded="true"] :is(.top, .bottom) {
+  y: 45px;
+}
+
+.burger[aria-expanded="true"] .top {
+  rotate: 45deg;
+}
+
+.burger[aria-expanded="true"] .middle {
+  opacity: 0;
+}
+
+.burger[aria-expanded="true"] .bottom {
+  rotate: -45deg;
+}
+
+.scroll-off {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+
+
+/* body {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+/* @supports(scrollbar-gutter: stable) {
+	html {
+    scrollbar-gutter: stable;
+  }
+} */
+
+.accordion-content[aria-hidden="false"] {
+  grid-template-rows: 1fr;
+}
