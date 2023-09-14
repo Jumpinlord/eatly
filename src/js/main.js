@@ -1,14 +1,4 @@
 
-
-// new PerformanceObserver((list) => {
-//   const latestEntry = list.getEntries().at(-1);
-
-//   if (latestEntry?.element?.getAttribute('loading') == 'lazy') {
-//     console.warn('Warning: LCP element was lazy loaded', latestEntry);
-//   }
-// }).observe({type: 'largest-contentful-paint', buffered: true});
-
-
 document.addEventListener('DOMContentLoaded', function() {
   const burgerBtn = document.querySelector('#burger-btn');
   const menuItems = document?.querySelectorAll('[data-menu-item]');
@@ -35,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   burgerBtn.addEventListener("click", () => {
     const currentState = burgerBtn?.getAttribute("data-state");
-    
+
     if (!currentState || currentState === "closed") {
       openBurgerMenu();
     }
@@ -90,24 +80,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Date
   footerDate.textContent = new Date().getFullYear();
+
+
+  // Prevent burger button from moving to the left/right
+  const mediaQuerylist = window.matchMedia("(any-hover: none)");
+  const scrollWidthCheck = function() {
+    const headerElem = document.querySelector(".header");
+
+    if (!headerElem) return;
+
+    let scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    const updateScrollbarWidth = () => {
+        scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+        if (window.innerWidth > window.innerWidth - scrollbarWidth) headerElem.style.paddingRight = `${scrollbarWidth}px`;
+        else if (window.innerWidth <= window.innerWidth - scrollbarWidth) headerElem.style.paddingRight = '0px';
+    };
+    updateScrollbarWidth();
+    mediaQuerylist.addEventListener("change", updateScrollbarWidth);
+  };
+  scrollWidthCheck();
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
