@@ -82,16 +82,4 @@
   grid-template-rows: 1fr;
 }
 
-@keyframes pointer {
-  0%, 10%, 40%, 100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-8px);
-  }
-}
-.animate-pointer {
-  animation: pointer 5s cubic-bezier(.25,1.58,.6,-0.46) infinite;
-}
-
 

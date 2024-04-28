@@ -20,39 +20,25 @@ module.exports = {
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
-        animatedHeading: {
-          "0%": {
-            transform: "translateY(0%)",
-            opacity: '0'
-          },
-          "25%": {
-            opacity: '0.25'
-          },
-          "50%": {
-            transform: "translateY(-50%) scale(1.05)",
-            opacity: '0.5'
-          },
-          "75%": {
-            transform: "translateY(-25%) scale(1.15)",
-            opacity: '0.75'
-          },
-          "85%": {
-            opacity: '1'
-          },
-          "100%": {
-            transform: "translateY(0%) scale(1)",
-          },
+        tickerText: {
+          '0%': { transform: 'translate3d(0, 0, 0)' },
+          '100%': { transform: 'translate3d(-100%, 0, 0)' },
         },
-      },
-      backgroundSize: {
-        '300%': '300%',
+        pointer: {
+          '0%': { transform: 'translateX(0)' },
+          '10%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(-8px)' },
+          '40%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(0)' },
+        },
       },
       animation: {
         gradient: 'animatedgradient 9s ease infinite alternate',
-        animatedHeading: "animatedHeading linear forwards",
+        tickerText: 'tickerText 40s linear infinite',
+        pointer: 'pointer 5s cubic-bezier(.25,1.58,.6,-0.46) infinite',
       },
-      supports: {
-        "no-scroll-driven-animations": "not(animation-timeline: scroll())",
+      backgroundSize: {
+        '300%': '300%',
       },
     },
     screens: {
