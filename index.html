@@ -24,7 +24,7 @@
   <link href="./src/css/style.css" rel="stylesheet">
   <title>Eatly | Food delivery service</title>
 </head>
-<body class="flex flex-col min-h-screen font-poppins text-[#323142] dark:text-gray-200 bg-white dark:bg-slate-900">
+<body class="flex flex-col  min-h-screen font-poppins text-[#323142] dark:text-gray-200 bg-white dark:bg-slate-900 ">
   <header class="sticky header top-0 left-0 right-0 z-50 pt-7 bg-inherit">
     <div class="px-8 max-w-[1248px] mx-auto">
       <div class="flex items-center justify-between pb-6 border-b border-b-slate-200/60 dark:border-b-slate-200/20">
@@ -131,8 +131,8 @@
           </button>
         </div>
 
-        <!-- Mobile menu -->
-        <div id="primary-navigation" class="fixed inset-0 top-24 z-50 w-full min-h-[calc(100vh - 96px)] pb-5 transition-transform duration-1000 ease-in-out translate-x-full lg:hidden bg-white dark:bg-slate-900 ">
+        <!-- Mobile menu id="primary-navigation" removed: w-full  min-h-[calc(100vh - 96px)] -->
+        <div id="primary-navigation" class="fixed inset-0 top-24 z-50 min-h-[calc(100vh - 96px)]  pb-5 transition-transform duration-1000 ease-in-out translate-x-full lg:hidden bg-white dark:bg-slate-900 ">
           <div class="flex flex-col gap-10">
             <nav class="mt-12" aria-label="navigation menu" data-menu>
               <ul class="flex flex-col items-center gap-10 font-semibold">
@@ -155,7 +155,7 @@
   </header>
 
   <main class="flex-grow">
-    <section class=" min-h-max py-24 md:py-36 ">
+    <section class="min-h-max my-28 md:my-36 ">
       <div class="px-8 max-w-[1248px] mx-auto">
         <div class="flex flex-col items-center justify-center gap-28 md:gap-7 md:justify-between md:flex-row">
 
@@ -234,7 +234,7 @@
       </div>
     </section>
 
-    <section class=" text-center text-white dark:text-gray-200 bg-indigo-600 py-14">
+    <section class=" text-center text-white dark:text-gray-200 bg-indigo-600 py-14 mb-28 md:mb-36">
       <div class="px-8 max-w-[1248px] mx-auto">
         <h2 class="sr-only">Eatly business stats counter</h2>
         <div class="flex flex-wrap justify-around gap-20 md:flex-row ">
@@ -263,9 +263,9 @@
       </div>
     </section>
 
-    <section class=" min-h-max">
+    <section class="min-h-max mb-28 md:mb-36">
       <div class="px-8 max-w-[1248px] mx-auto">
-        <div class="flex flex-col-reverse items-center justify-around border-b md:flex-row gap-28 md:gap-16 border-b-slate-200/60 dark:border-b-slate-200/20 pt-28 pb-14 md:pb-40">
+        <div class="flex flex-col-reverse items-center justify-around  md:flex-row gap-20 md:gap-16  ">
           <picture>
             <source srcset="./src/assets/img/phone.avif" type="image/avif">
             <source srcset="./src/assets/img/phone.webp" type="image/webp">
@@ -288,9 +288,26 @@
       </div>
     </section>
 
-    <section class=" min-h-max ">
+    <section class="min-h-max mb-28 md:mb-36 overflow-hidden">
+      <h2 class="sr-only">How to browse restaurants and menus</h2>
+      <div class="w-full py-3 md:py-5 bg-indigo-700 pl-[100%] box-content text-lg md:text-2xl">
+        <div class="animate-tickerText inline-block leading-[4rem] whitespace-nowrap pr-[100%] box-content">
+          <p class="inline-block py-0 px-8  text-white">
+            Once you're logged in, you can browse through the list of available restaurants on the Eatly website.
+          </p>
+          <p class="inline-block py-0 px-8 text-white">
+            You can filter by cuisine, price, and distance to find the perfect restaurant for your needs.
+          </p>
+          <p class="inline-block py-0 px-8 text-white">
+            Click on a restaurant to view its menu.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class=" min-h-max mb-28 md:mb-36">
       <div class="px-8 max-w-[1248px] mx-auto">
-        <div class="grid border-b pt-28 pb-14 md:pb-40 border-b-slate-200/60 dark:border-b-slate-200/20">
+        <div class="grid">
           <h2 class="mb-16 text-3xl font-bold leading-tight text-center md:text-4xl lg:text-5xl ">
             Our Top <span class="text-indigo-600">Restaurants</span>
           </h2>
@@ -415,9 +432,9 @@
       </div>
     </section>
 
-    <section class=" min-h-max ">
+    <section class=" min-h-max mb-28 md:mb-36">
       <div class="px-8 max-w-[1248px] mx-auto">
-        <div class="grid pt-28 pb-14 md:pb-40 border-b border-b-slate-200/60 dark:border-b-slate-200/20">
+        <div class="grid">
           <h2 class="mb-16 text-3xl font-bold leading-tight text-center md:text-4xl lg:text-5xl ">
             Our Top <span class="text-indigo-600">Dishes</span>
           </h2>
@@ -665,7 +682,7 @@
     </section>
 
     <!-- Accordion -->
-    <section class=" pt-28 pb-20 md:pb-36 min-h-max">
+    <section class="min-h-max mb-28 md:mb-36">
       <div class="px-8  max-w-[1248px] mx-auto ">
           <h2 class="mb-16 text-3xl font-bold leading-tight text-center md:text-4xl lg:text-5xl ">
             Frequently Asked <span class="text-indigo-600">Questions</span>
@@ -772,23 +789,6 @@
               </div>
             </div>
           </div>
-      </div>
-    </section>
-
-    <section class="pt-20 pb-20 md:pb-40 min-h-max overflow-hidden">
-      <h2 class="sr-only">How to browse restaurants and menus</h2>
-      <div class="w-full py-3 md:py-5 bg-indigo-700 pl-[100%] box-content">
-        <div class="animate-tickerText inline-block leading-[4rem] whitespace-nowrap pr-[100%] box-content">
-          <p class="inline-block py-0 px-8 md:text-2xl text-white">
-            Once you're logged in, you can browse through the list of available restaurants on the Eatly website.
-          </p>
-          <p class="inline-block py-0 px-8 md:text-2xl text-white">
-            You can filter by cuisine, price, and distance to find the perfect restaurant for your needs.
-          </p>
-          <p class="inline-block py-0 px-8 md:text-2xl text-white">
-            Click on a restaurant to view its menu.
-          </p>
-        </div>
       </div>
     </section>
 

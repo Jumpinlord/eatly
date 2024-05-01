@@ -94,6 +94,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const disableScroll = () => {
+    // const fixBlocks = document?.querySelectorAll('.fixed-block');
+    // fixBlocks.forEach(el => { el.style.paddingRight = paddingOffset; });
+
     const pagePosition = window.scrollY;
     body.dataset.position = pagePosition;
     body.classList.add('scroll-off');
@@ -102,6 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   const enableScroll = () => {
+    // const fixBlocks = document?.querySelectorAll('.fixed-block');
+    // fixBlocks.forEach(el => { el.style.paddingRight = '0px'; });
+
     const pagePosition = parseInt(body.dataset.position, 10);
     body.classList.remove('scroll-off');
     window.scroll({

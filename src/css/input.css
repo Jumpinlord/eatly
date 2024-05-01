@@ -62,21 +62,16 @@
   rotate: -45deg;
 }
 
-.scroll-off {
+/* .scroll-off {
   position: fixed;
   left: 0;
   top: 0;
   overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  overscroll-behavior: none;
-}
 
-@supports(scrollbar-gutter: stable) {
-	html {
-    scrollbar-gutter: stable;
-  }
-}
+  width: 100%;
+  min-height: 100vh;
+  overscroll-behavior: none;
+} */
 
 .accordion-content[aria-hidden="false"] {
   grid-template-rows: 1fr;
