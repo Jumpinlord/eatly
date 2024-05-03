@@ -28,7 +28,7 @@
   <header class="sticky top-0 left-0 right-0 z-50 header pt-7 bg-inherit">
     <div class="px-8 max-w-[1248px] mx-auto">
       <div class="flex items-center justify-between pb-6 border-b border-b-slate-200/60 dark:border-b-slate-200/20">
-        <a href="#!" aria-label="Main page" class="flex items-center rounded-sm outline-none gap-x-3 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100">
+        <a href="#" aria-label="Main page" class="flex items-center rounded-sm outline-none gap-x-3 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100">
           <svg width="46" height="43" viewBox="0 0 46 43" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="3.67383" y="4.97852" width="42.2674" height="37.3367" rx="6.96951" fill="#4F46E5"/>
             <rect x="1.0075" y="1.0075" width="40.2524" height="35.3217" rx="5.96201" fill="#DBD9EE" stroke="#4F46E5" stroke-width="2.01499"/>
@@ -131,7 +131,7 @@
           </button>
         </div>
 
-        <!-- Mobile menu id="primary-navigation" removed: w-full  min-h-[calc(100vh - 96px)] -->
+        <!-- Mobile menu  -->
         <div id="primary-navigation" class="fixed inset-0 top-24 z-50 min-h-[calc(100vh - 96px)]  pb-5 transition-transform duration-1000 ease-in-out translate-x-full lg:hidden bg-white dark:bg-slate-900 ">
           <div class="flex flex-col gap-10">
             <nav class="mt-12" aria-label="navigation menu" data-menu>
@@ -148,9 +148,7 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </header>
 
@@ -260,6 +258,21 @@
             </div>
           </div>
         </div>
+        <button type="button" id="btn-back-to-top" aria-label="Back to Top" title="Back to Top" class="fixed hidden p-3 text-xs font-medium leading-tight text-white uppercase transition duration-150 ease-in-out bg-orange-500 rounded-full shadow-md bottom-8 end-8 hover:bg-orange-600 hover:shadow-lg focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 focus-visible:ring-1 active:bg-orange-700 active:shadow-lg">
+          <span class="[&>svg]:w-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+            </svg>
+          </span>
+        </button>
       </div>
     </section>
 
@@ -859,6 +872,7 @@
 
   <script src="./src/js/theme-toggle.js"></script>
   <script src="./src/js/burger.js"></script>
+  <script src="./src/js/scroll-top.js"></script>
   <script src="./src/js/accordion.js"></script>
   <script src="./src/js/formValidate.js"></script>
   <script src="./src/js/main.js" type="module"></script>
