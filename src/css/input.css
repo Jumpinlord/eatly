@@ -66,4 +66,22 @@
   grid-template-rows: 1fr;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+
+  @supports (animation-timeline: view()) {
+    img {
+      scale: 0.75; opacity: 0.25;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: 50px;
+      animation-range-end: 500px;
+    }
+  }
+
+  @keyframes fade-in {
+    to {
+      scale: 1; opacity: 1;
+    }
+  }
+}
 
