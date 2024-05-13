@@ -73,8 +73,8 @@
       scale: 0.75; opacity: 0.25;
       animation: fade-in linear forwards;
       animation-timeline: view();
-      animation-range-start: 50px;
-      animation-range-end: 400px;
+      animation-range-start: 20px;
+      animation-range-end: 200px;
     }
   }
 
