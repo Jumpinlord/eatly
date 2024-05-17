@@ -1,40 +1,43 @@
-const burgerBtn = document.querySelector('#burger-btn');
-const menuItems = document?.querySelectorAll('[data-menu-item]');
-const mobileMenu = document.querySelector('#primary-navigation');
+export function burger() {
+  const burgerBtn = document.querySelector('#burger-btn');
+  const menuItems = document?.querySelectorAll('[data-menu-item]');
+  const mobileMenu = document.querySelector('#primary-navigation');
 
-const openBurgerMenu = () => {
-  burgerBtn?.setAttribute('data-state', 'opened');
-  burgerBtn?.setAttribute('aria-expanded', 'true');
-  burgerBtn?.setAttribute('aria-label', 'Close menu');
-  mobileMenu?.classList.remove('translate-x-full');
-  mobileMenu.setAttribute('aria-hidden', 'false');
-  // disableScroll();
-};
+  const openBurgerMenu = () => {
+    burgerBtn?.setAttribute('data-state', 'opened');
+    burgerBtn?.setAttribute('aria-expanded', 'true');
+    burgerBtn?.setAttribute('aria-label', 'Close menu');
+    mobileMenu?.classList.remove('translate-x-full');
+    mobileMenu.setAttribute('aria-hidden', 'false');
+    // disableScroll();
+  };
 
-const closeBurgerMenu = () => {
-  burgerBtn?.setAttribute('data-state', 'closed');
-  burgerBtn?.setAttribute('aria-expanded', 'false');
-  burgerBtn?.setAttribute('aria-label', 'Open menu');
-  mobileMenu?.classList.add('translate-x-full');
-  mobileMenu.setAttribute('aria-hidden', 'true');
-  // enableScroll();
-};
+  const closeBurgerMenu = () => {
+    burgerBtn?.setAttribute('data-state', 'closed');
+    burgerBtn?.setAttribute('aria-expanded', 'false');
+    burgerBtn?.setAttribute('aria-label', 'Open menu');
+    mobileMenu?.classList.add('translate-x-full');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+    // enableScroll();
+  };
 
-burgerBtn.addEventListener('click', () => {
-  const currentState = burgerBtn?.getAttribute('data-state');
+  burgerBtn.addEventListener('click', () => {
+    const currentState = burgerBtn?.getAttribute('data-state');
 
-  if (!currentState || currentState === 'closed') {
-    openBurgerMenu();
-  } else {
-    closeBurgerMenu();
-  }
-});
+    if (!currentState || currentState === 'closed') {
+      openBurgerMenu();
+    } else {
+      closeBurgerMenu();
+    }
+  });
 
-menuItems?.forEach(el => el.addEventListener('click', closeBurgerMenu));
+  menuItems?.forEach(el => el.addEventListener('click', closeBurgerMenu));
 
-document.addEventListener('keyup', function ({ key }) {
-  if (key === 'Escape') closeBurgerMenu();
-});
+  document.addEventListener('keyup', function ({ key }) {
+    if (key === 'Escape') closeBurgerMenu();
+  });
+}
+
 
 // const disableScroll = () => {
 
