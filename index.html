@@ -57,15 +57,32 @@
   >
     <header class="sticky top-0 left-0 right-0 z-50 header pt-7 bg-inherit">
       <div class="px-8 max-w-[1248px] mx-auto">
-        <dialog id="eatly-cookie" aria-labelledby="cookie-title" aria-describedby="description" class="fixed z-50 bottom-4 left-4 max-w-72 2xs:max-w-96 rounded-md p-4 bg-green-300/80 bg-clip-paddin backdrop-filter backdrop-blur-sm ms-0 overflow-y-auto overscroll-y-contain">
+        <dialog
+          id="eatly-cookie"
+          aria-labelledby="cookie-title"
+          aria-describedby="description"
+          class="fixed z-50 p-4 overflow-y-auto rounded-md bottom-4 left-4 max-w-72 2xs:max-w-96 bg-green-300/80 bg-clip-paddin backdrop-filter backdrop-blur-sm ms-0 overscroll-y-contain"
+        >
           <h2 id="cookie-title" class="mb-4 font-bold">Cookie settings</h2>
           <p class="mb-4">
-            This website uses some cookies to make it work. We don't set any analytics
-            cookies to collect your statistics.
+            This website uses some cookies to make it work. We don't set any
+            analytics cookies to collect your statistics.
           </p>
-          <form method="dialog" class="mb-0 flex flex-wrap gap-2 font-medium">
-            <button type="submit" value="accept" class="text-inherit border border-indigo-600 transition-colors duration-200 rounded outline-none md:self-start w-fit hover:bg-indigo-700 hover:text-white focus-visible:outline-indigo-600 outline-2 outline-offset-1 outline-offset-slate-100 px-6 py-2">Accept</button>
-            <button type="submit" value="reject" class="text-inherit border border-indigo-600 transition-colors duration-200  rounded outline-none md:self-start w-fit hover:bg-indigo-700 hover:text-white focus-visible:outline-indigo-600 outline-2 outline-offset-1 outline-offset-slate-100 px-6 py-2">Reject</button>
+          <form method="dialog" class="flex flex-wrap gap-2 mb-0 font-medium">
+            <button
+              type="submit"
+              value="accept"
+              class="px-6 py-2 transition-colors duration-200 border border-indigo-600 rounded outline-none text-inherit md:self-start w-fit hover:bg-indigo-700 hover:text-white focus-visible:outline-indigo-600 outline-2 outline-offset-1 outline-offset-slate-100"
+            >
+              Accept
+            </button>
+            <button
+              type="submit"
+              value="reject"
+              class="px-6 py-2 transition-colors duration-200 border border-indigo-600 rounded outline-none text-inherit md:self-start w-fit hover:bg-indigo-700 hover:text-white focus-visible:outline-indigo-600 outline-2 outline-offset-1 outline-offset-slate-100"
+            >
+              Reject
+            </button>
           </form>
         </dialog>
         <div
