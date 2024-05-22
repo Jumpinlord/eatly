@@ -9,7 +9,6 @@ export function burger() {
     burgerBtn?.setAttribute('aria-label', 'Close menu');
     mobileMenu?.classList.remove('translate-x-full');
     mobileMenu.setAttribute('aria-hidden', 'false');
-    document.documentElement.style.overflowY = 'hidden';
   };
 
   const closeBurgerMenu = () => {
@@ -18,7 +17,6 @@ export function burger() {
     burgerBtn?.setAttribute('aria-label', 'Open menu');
     mobileMenu?.classList.add('translate-x-full');
     mobileMenu.setAttribute('aria-hidden', 'true');
-    document.documentElement.style.overflowY = '';
   };
 
   burgerBtn.addEventListener('click', () => {
