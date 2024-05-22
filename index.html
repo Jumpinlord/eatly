@@ -1,55 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/favicon/safari-pinned-tab.svg"
-      color="#6366f1"
-    />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta
-      name="description"
-      content="Food delivery service Eatly help you enjoy food all over the world and earn cash back offers"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="eatly-zeta.vercel.app" />
-    <meta property="og:url" content="https://eatly-zeta.vercel.app" />
-    <meta
-      property="og:image"
-      content="https://eatly-zeta.vercel.app/src/assets/img/eatly-og.jpg"
-    />
-    <meta property="og:title" content="Eatly - food delivery service" />
-    <meta
-      property="og:descrition"
-      content="Join Eatly - the best food delivery service to set goals, enjoy various foods from different parts of the world and earn cash back offers"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Food delivery service Eatly help you enjoy food all over the world and earn cash back offers">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="eatly-zeta.vercel.app">
+    <meta property="og:url" content="https://eatly-zeta.vercel.app">
+    <meta property="og:image" content="https://eatly-zeta.vercel.app/src/assets/img/eatly-og.jpg">
+    <meta property="og:title" content="Eatly - food delivery service">
+    <meta property="og:descrition" content="Join Eatly - the best food delivery service to set goals, enjoy various foods from different parts of the world and earn cash back offers">
 
     <title>Eatly | Food delivery service</title>
-    <link href="./src/css/style.css" rel="stylesheet" />
+    <link href="./src/css/style.css" rel="stylesheet">
     <script src="./src/js/main.js" type="module"></script>
   </head>
   <body
@@ -57,42 +29,23 @@
   >
     <header class="sticky top-0 left-0 right-0 z-50 header pt-7 bg-inherit">
       <div class="px-8 max-w-[1248px] mx-auto">
-        <dialog
-          id="eatly-cookie"
-          aria-labelledby="cookie-title"
-          aria-describedby="description"
-          class="fixed z-50 p-4 overflow-y-auto rounded-md bottom-4 left-4 max-w-72 2xs:max-w-96 bg-green-300/80 bg-clip-paddin backdrop-filter backdrop-blur-sm ms-0 overscroll-y-contain"
-        >
+        <dialog id="eatly-cookie" aria-labelledby="cookie-title" aria-describedby="cookie-description" class="fixed z-50 p-4 overflow-y-auto rounded-md bottom-4 left-4 max-w-72 2xs:max-w-96 bg-green-300/75 backdrop-filter backdrop-blur-md ms-0 overscroll-y-contain">
           <h2 id="cookie-title" class="mb-4 font-bold">Cookie settings</h2>
-          <p class="mb-4">
+          <p id="cookie-description" class="mb-4">
             This website uses some cookies to make it work. We don't set any
             analytics cookies to collect your statistics.
           </p>
           <form method="dialog" class="flex flex-wrap gap-2 mb-0 font-medium">
-            <button
-              type="submit"
-              value="accept"
-              class="px-6 py-2 transition-colors duration-200 border border-indigo-600 rounded outline-none text-inherit md:self-start w-fit hover:bg-indigo-700 hover:text-white focus-visible:outline-indigo-600 outline-2 outline-offset-1 outline-offset-slate-100"
-            >
+            <button type="submit" value="accept" class="px-6 py-2 transition-colors duration-200 border border-indigo-600 rounded outline-none text-inherit md:self-start w-fit hover:bg-indigo-700 hover:text-white focus-visible:outline-indigo-600 outline-2 outline-offset-1 outline-offset-slate-100">
               Accept
             </button>
-            <button
-              type="submit"
-              value="reject"
-              class="px-6 py-2 transition-colors duration-200 border border-indigo-600 rounded outline-none text-inherit md:self-start w-fit hover:bg-indigo-700 hover:text-white focus-visible:outline-indigo-600 outline-2 outline-offset-1 outline-offset-slate-100"
-            >
+            <button type="submit" value="reject" class="px-6 py-2 transition-colors duration-200 border border-indigo-600 rounded outline-none text-inherit md:self-start w-fit hover:bg-indigo-700 hover:text-white focus-visible:outline-indigo-600 outline-2 outline-offset-1 outline-offset-slate-100">
               Reject
             </button>
           </form>
         </dialog>
-        <div
-          class="flex items-center justify-between pb-6 border-b border-b-slate-200/60 dark:border-b-slate-200/20"
-        >
-          <a
-            href="#"
-            aria-label="Main page"
-            class="flex items-center rounded-sm outline-none gap-x-3 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-          >
+        <div class="flex items-center justify-between pb-6 border-b border-b-slate-200/60 dark:border-b-slate-200/20">
+          <a href="#" aria-label="Main page" class="flex items-center rounded-sm outline-none gap-x-3 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100">
             <svg
               width="46"
               height="43"
@@ -152,60 +105,24 @@
           <!-- Desktop menu -->
           <nav class="hidden lg:block" aria-label="navigation menu">
             <ul class="flex items-center gap-12 font-semibold">
-              <li
-                class="transition-colors duration-300 hover:text-indigo-600"
-                data-menu-item
-              >
-                <a
-                  class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-                  href="#!"
-                  >Menu</a
-                >
+              <li class="transition-colors duration-300 hover:text-indigo-600" data-menu-item>
+                <a class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100" href="#">Menu</a>
               </li>
-              <li
-                class="transition-colors duration-300 hover:text-indigo-600"
-                data-menu-item
-              >
-                <a
-                  class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-                  href="#!"
-                  >Blog</a
-                >
+              <li class="transition-colors duration-300 hover:text-indigo-600" data-menu-item>
+                <a class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100" href="#">Blog</a>
               </li>
-              <li
-                class="transition-colors duration-300 hover:text-indigo-600"
-                data-menu-item
-              >
-                <a
-                  class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-                  href="#!"
-                  >Pricing</a
-                >
+              <li class="transition-colors duration-300 hover:text-indigo-600" data-menu-item>
+                <a class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100" href="#">Pricing</a>
               </li>
-              <li
-                class="transition-colors duration-300 hover:text-indigo-600"
-                data-menu-item
-              >
-                <a
-                  class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-                  href="#!"
-                  >Contact</a
-                >
+              <li class="transition-colors duration-300 hover:text-indigo-600" data-menu-item>
+                <a class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100" href="#">Contact</a>
               </li>
             </ul>
           </nav>
 
           <div class="items-center hidden gap-6 text-lg sm:flex">
-            <a
-              class="px-6 py-2 font-bold transition-colors duration-300 border border-indigo-600 rounded-md outline-none hover:text-white hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100"
-              href="#!"
-              >Login</a
-            >
-            <a
-              class="px-6 py-2 font-semibold text-white transition-colors duration-300 bg-indigo-600 rounded-md outline-none dark:text-gray-200 hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100"
-              href="#!"
-              >Sign Up</a
-            >
+            <a class="px-6 py-2 font-bold transition-colors duration-300 border border-indigo-600 rounded-md outline-none hover:text-white hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100" href="#">Login</a>
+            <a class="px-6 py-2 font-semibold text-white transition-colors duration-300 bg-indigo-600 rounded-md outline-none dark:text-gray-200 hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100" href="#">Sign Up</a>
           </div>
 
           <div class="flex items-center gap-8">
@@ -528,58 +445,31 @@
           </div>
 
           <!-- Mobile menu  -->
-          <div
-            id="primary-navigation"
-            class="fixed inset-0 top-24 z-50 min-h-[calc(100vh - 96px)] pb-5 transition-transform duration-1000 ease-in-out translate-x-full lg:hidden bg-white dark:bg-slate-900"
-          >
+          <div id="primary-navigation" class="fixed inset-0 top-24 z-50 min-h-[calc(100vh - 96px)] pb-5 transition-transform duration-1000 ease-in-out translate-x-full lg:hidden bg-white dark:bg-slate-900">
             <div class="flex flex-col gap-10">
               <nav class="mt-12" aria-label="navigation menu" data-menu>
                 <ul class="flex flex-col items-center gap-10 font-semibold">
                   <li class="hover:text-indigo-600" data-menu-item>
-                    <a
-                      class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-                      href="#!"
-                      >Menu</a
-                    >
+                    <a class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100" href="#">Menu</a>
                   </li>
                   <li class="hover:text-indigo-600" data-menu-item>
-                    <a
-                      class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-                      href="#!"
-                      >Blog</a
-                    >
+                    <a class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100" href="#" >Blog</a>
                   </li>
                   <li class="hover:text-indigo-600" data-menu-item>
-                    <a
-                      class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-                      href="#!"
-                      >Pricing</a
-                    >
+                    <a class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100" href="#">Pricing</a>
                   </li>
                   <li class="hover:text-indigo-600" data-menu-item>
-                    <a
-                      class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-                      href="#!"
-                      >Contact</a
-                    >
+                    <a class="rounded-sm outline-none focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100" href="#">Contact</a>
                   </li>
                 </ul>
               </nav>
-              <div
-                class="flex items-center justify-center gap-6 text-lg sm:hidden"
-              >
-                <a
-                  class="px-6 py-2 font-bold transition-colors duration-300 border border-indigo-600 rounded-md outline-none hover:text-white hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100"
-                  href="#!"
-                  data-menu-item
-                  >Login</a
-                >
-                <a
-                  class="px-6 py-2 font-semibold text-white transition-colors duration-300 bg-indigo-600 rounded-md outline-none dark:text-gray-200 hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100"
-                  href="#!"
-                  data-menu-item
-                  >Sign Up</a
-                >
+              <div class="flex items-center justify-center gap-6 text-lg sm:hidden">
+                <a class="px-6 py-2 font-bold transition-colors duration-300 border border-indigo-600 rounded-md outline-none hover:text-white hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100" href="#" data-menu-item>
+                  Login
+                </a>
+                <a class="px-6 py-2 font-semibold text-white transition-colors duration-300 bg-indigo-600 rounded-md outline-none dark:text-gray-200 hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100" href="#" data-menu-item>
+                  Sign Up
+                </a>
               </div>
             </div>
           </div>
@@ -590,55 +480,34 @@
     <main class="flex-grow">
       <section class="min-h-max my-28 md:my-52">
         <div class="px-8 max-w-[1248px] mx-auto">
-          <div
-            class="flex flex-col items-center justify-center gap-28 md:gap-7 md:justify-between md:flex-row"
-          >
+          <div class="flex flex-col items-center justify-center gap-28 md:gap-7 md:justify-between md:flex-row">
             <div class="hero-top">
-              <div
-                class="flex items-center justify-center gap-3 mx-auto mb-5 md:justify-start"
-              >
-                <span
-                  class="w-9 h-[2px] bg-gray-300 inline-block text-center"
-                ></span>
-                <span
-                  class="font-semibold text-gray-500 dark:text-gray-400 text-[10px] leading-tight tracking-[2px]"
-                  >OVER 1000 USERS</span
-                >
+              <div class="flex items-center justify-center gap-3 mx-auto mb-5 md:justify-start">
+                <span class="w-9 h-[2px] bg-gray-300 inline-block text-center"></span>
+                <span class="font-semibold text-gray-500 dark:text-gray-400 text-[10px] leading-tight tracking-[2px]">
+                  OVER 1000 USERS
+                </span>
               </div>
 
-              <h1
-                class="md:max-w-[567px] mb-6 md:mb-8 text-[46px] md:text-[52px] lg:text-[75px] font-semibold leading-tight tracking-[-3px] text-center text-balance md:text-left bg-gradient-to-r from-orange-400 to-green-400 bg-clip-text text-transparent bg-300% animate-gradient"
-              >
+              <h1 class="md:max-w-[567px] mb-6 md:mb-8 text-[46px] md:text-[52px] lg:text-[75px] font-semibold leading-tight tracking-[-3px] text-center text-balance md:text-left bg-gradient-to-r from-orange-400 to-green-400 bg-clip-text text-transparent bg-300% animate-gradient">
                 Enjoy Foods All Over The World
               </h1>
-              <p
-                class="md:max-w-[499px] mb-10 xs:mb-16 text-pretty text-lg text-gray-500 dark:text-gray-400 text-center md:text-left"
-              >
+              <p class="md:max-w-[499px] mb-10 xs:mb-16 text-pretty text-lg text-gray-500 dark:text-gray-400 text-center md:text-left">
                 EatLy help you set saving goals, earn cash back offers, Go to
                 disclaimer for more details and get paychecks up to two days
                 early. Get a
                 <span class="font-bold">$20 bonus.</span>
               </p>
-              <div
-                class="flex flex-col justify-center gap-4 mb-8 xs:flex-row md:justify-start"
-              >
-                <a
-                  href="#!"
-                  aria-label="Join our service"
-                  class="w-full px-6 py-2 font-medium text-center text-white transition-colors duration-300 bg-indigo-600 rounded-md outline-none ainline-block dark:text-gray-200 xs:w-auto hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2"
-                  >Get Started</a
-                >
+              <div class="flex flex-col justify-center gap-4 mb-8 xs:flex-row md:justify-start">
+                <a href="#" aria-label="Join our service" class="w-full px-6 py-2 font-medium text-center text-white transition-colors duration-300 bg-indigo-600 rounded-md outline-none ainline-block dark:text-gray-200 xs:w-auto hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2">
+                  Get Started
+                  </a>
 
-                <a
-                  href="#!"
-                  aria-label="Become a Pro member"
-                  class="inline-block w-full px-6 py-2 font-medium text-center transition-colors duration-300 border border-indigo-600 rounded-md outline-none xs:w-auto hover:text-white hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2"
-                  >Go Pro</a
-                >
+                <a href="#" aria-label="Become a Pro member" class="inline-block w-full px-6 py-2 font-medium text-center transition-colors duration-300 border border-indigo-600 rounded-md outline-none xs:w-auto hover:text-white hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2">
+                  Go Pro
+                </a>
               </div>
-              <div
-                class="flex flex-col items-center justify-center gap-5 xs:flex-row md:justify-start"
-              >
+              <div class="flex flex-col items-center justify-center gap-5 xs:flex-row md:justify-start">
                 <span class="flex items-center gap-2 font-medium">
                   <svg
                     aria-hidden="true"
@@ -686,77 +555,35 @@
                       />
                     </g>
                   </svg>
-                  <span class="font-semibold text-gray-500 dark:text-gray-400"
-                    >4900+</span
-                  >
+                  <span class="font-semibold text-gray-500 dark:text-gray-400">4900+</span>
                 </div>
               </div>
             </div>
             <div class="relative grid flex-grow place-content-center">
               <div class="max-w-[402px] rounded-full border-8 border-green-400">
                 <picture>
-                  <source
-                    srcset="./src/assets/img/chicken-salad.avif"
-                    type="image/avif"
-                  />
-                  <source
-                    srcset="./src/assets/img/chicken-salad.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    class="rounded-full"
-                    src="./src/assets/img/chicken-salad.png"
-                    alt="Salad with chicken fillets"
-                    width="383"
-                    height="383"
-                  />
+                  <source srcset="./src/assets/img/chicken-salad.avif" type="image/avif">
+                  <source srcset="./src/assets/img/chicken-salad.webp" type="image/webp">
+                  <img class="rounded-full" src="./src/assets/img/chicken-salad.png" alt="Salad with chicken fillets" width="383" height="383">
                 </picture>
-                <div
-                  class="absolute w-full max-w-[328px] grid grid-cols-4 gap-4 border dark:border-indigo-700 -top-10 left-[50%] -translate-x-[50%] lg:left-auto lg:translate-x-0 lg:right-0 bg-white dark:bg-slate-950 rounded-lg p-2 shadow-xl shadow-indigo-500/20"
-                >
+                <div class="absolute w-full max-w-[328px] grid grid-cols-4 gap-4 border dark:border-indigo-700 -top-10 left-[50%] -translate-x-[50%] lg:left-auto lg:translate-x-0 lg:right-0 bg-white dark:bg-slate-950 rounded-lg p-2 shadow-xl shadow-indigo-500/20">
                   <picture>
-                    <source
-                      srcset="./src/assets/img/chicken-salad.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="./src/assets/img/chicken-salad.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="rounded-full"
-                      src="./src/assets/img/chicken-salad.png"
-                      alt="Salad with chicken fillets"
-                      width="66"
-                      height="66"
-                    />
+                    <source srcset="./src/assets/img/chicken-salad.avif" type="image/avif">
+                    <source srcset="./src/assets/img/chicken-salad.webp" type="image/webp">
+                    <img class="rounded-full" src="./src/assets/img/chicken-salad.png" alt="Salad with chicken fillets" width="66" height="66">
                   </picture>
                   <div class="flex flex-col col-span-2 gap-1">
-                    <span class="text-sm font-semibold lg:text-base"
-                      >Chicken hell</span
-                    >
-                    <span
-                      class="text-[10px] font-medium flex items-center gap-2"
-                    >
+                    <span class="text-sm font-semibold lg:text-base">Chicken hell</span>
+                    <span class="text-[10px] font-medium flex items-center gap-2">
                       On The Way
                       <span class="relative flex h-2.5 w-2.5">
-                        <span
-                          class="absolute inline-flex w-full h-full bg-green-600 rounded-full animate-ping dark:bg-green-100 opacity-80"
-                        ></span>
-                        <span
-                          class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"
-                        ></span>
+                        <span class="absolute inline-flex w-full h-full bg-green-600 rounded-full animate-ping dark:bg-green-100 opacity-80"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
                       </span>
                     </span>
                   </div>
 
-                  <div
-                    class="text-[10px] text-gray-500 dark:text-gray-400 place-self-end flex gap-3"
-                  >
-                    <!-- <span class="relative flex w-3 h-3">
-                    <span class="absolute inline-flex w-full h-full bg-indigo-400 rounded-full opacity-75 animate-ping"></span>
-                    <span class="relative inline-flex w-3 h-3 bg-indigo-500 rounded-full"></span>
-                  </span> -->
+                  <div class="text-[10px] text-gray-500 dark:text-gray-400 place-self-end flex gap-3">
                     <span>3:09 PM</span>
                   </div>
                 </div>
@@ -766,18 +593,14 @@
         </div>
       </section>
 
-      <section
-        class="text-center text-white bg-indigo-600 dark:text-gray-200 py-14 mb-28 md:mb-44"
-      >
+      <section class="text-center text-white bg-indigo-600 dark:text-gray-200 py-14 mb-28 md:mb-44">
         <div class="px-8 max-w-[1248px] mx-auto">
           <h2 class="sr-only">Eatly business stats counter</h2>
           <div class="flex flex-wrap justify-around gap-20 md:flex-row">
             <ul class="basis-[230px]">
               <li>
                 <div class="mb-3 text-4xl font-bold">10K+</div>
-                <div
-                  class="flex flex-col items-center text-sm font-medium text-slate-200"
-                >
+                <div class="flex flex-col items-center text-sm font-medium text-slate-200">
                   <span>Satisfied Costumers</span>
                   <span>All Great Over The World</span>
                 </div>
@@ -786,9 +609,7 @@
             <ul class="basis-[230px]">
               <li>
                 <div class="mb-3 text-4xl font-bold">4M</div>
-                <div
-                  class="flex flex-col items-center text-sm font-medium text-slate-200"
-                >
+                <div class="flex flex-col items-center text-sm font-medium text-slate-200">
                   <span>Healthy Dishes Sold</span>
                   <span>Including Milk Shakes Smooth</span>
                 </div>
@@ -797,9 +618,7 @@
             <ul class="basis-[230px]">
               <li>
                 <div class="mb-3 text-4xl font-bold">99.99%</div>
-                <div
-                  class="flex flex-col items-center text-sm font-medium text-slate-200"
-                >
+                <div class="flex flex-col items-center text-sm font-medium text-slate-200">
                   <span>Reliable Customer Support</span>
                   <span>We Provide Great Experiences</span>
                 </div>
@@ -839,26 +658,16 @@
             class="flex flex-col-reverse items-center justify-around gap-20 md:flex-row md:gap-16"
           >
             <picture>
-              <source srcset="./src/assets/img/phone.avif" type="image/avif" />
-              <source srcset="./src/assets/img/phone.webp" type="image/webp" />
-              <img
-                src="./src/assets/img/phone.png"
-                class="shadow-2xl shadow-indigo-500/60 rounded-[32px]"
-                alt="Eatly app on phone"
-                width="304"
-                height="609"
-              />
+              <source srcset="./src/assets/img/phone.avif" type="image/avif">
+              <source srcset="./src/assets/img/phone.webp" type="image/webp">
+              <img src="./src/assets/img/phone.png" class="shadow-2xl shadow-indigo-500/60 rounded-[32px]" alt="Eatly app on phone" width="304" height="609">
             </picture>
             <div class="md:self-start max-w-[430px] flex flex-col">
-              <h2
-                class="mb-16 text-3xl font-bold leading-tight text-center md:text-left md:text-4xl lg:text-5xl"
-              >
-                Premium <span class="text-indigo-600">Quality</span> <br />
+              <h2 class="mb-16 text-3xl font-bold leading-tight text-center text-balance md:text-left md:text-4xl lg:text-5xl">
+                Premium <span class="text-indigo-600">Quality</span>
                 For Your Health
               </h2>
-              <ul
-                class="px-3 text-lg text-gray-500 list-disc list-inside dark:text-gray-400 space-y-7 mb-9"
-              >
+              <ul class="px-3 text-lg text-gray-500 list-disc list-inside dark:text-gray-400 space-y-7 mb-9">
                 <li class="">
                   Premium quality food is made with ingredients that are packed
                   with essential vitamins, minerals.
@@ -868,11 +677,7 @@
                   digestion and boosting immunity
                 </li>
               </ul>
-              <a
-                href="#!"
-                aria-label="Download our app from .."
-                class="flex items-center self-center justify-center gap-3 px-6 py-3 font-semibold text-white transition-colors duration-300 bg-indigo-600 rounded-md outline-none md:self-start w-fit hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100"
-              >
+              <a href="#" aria-label="Download our app from .." class="flex items-center self-center justify-center gap-3 px-6 py-3 font-semibold text-white transition-colors duration-300 bg-indigo-600 rounded-md outline-none md:self-start w-fit hover:bg-indigo-700 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100">
                 <span>Download</span>
                 <svg
                   aria-hidden="true"
@@ -900,12 +705,8 @@
 
       <section class="overflow-hidden min-h-max mb-28 md:mb-44">
         <h2 class="sr-only">How to browse restaurants and menus</h2>
-        <div
-          class="w-full py-3 md:py-5 bg-indigo-600 pl-[100%] box-content text-lg md:text-2xl"
-        >
-          <div
-            class="animate-tickerText inline-block leading-[4rem] whitespace-nowrap pr-[100%] box-content"
-          >
+        <div class="w-full py-3 md:py-5 bg-indigo-600 pl-[100%] box-content text-lg md:text-2xl">
+          <div class="animate-tickerText inline-block leading-[4rem] whitespace-nowrap pr-[100%] box-content">
             <p class="inline-block px-8 py-0 text-white">
               Once you're logged in, you can browse through the list of
               available restaurants on the Eatly website.
@@ -924,46 +725,25 @@
       <section class="min-h-max mb-28 md:mb-44">
         <div class="px-8 max-w-[1248px] mx-auto">
           <div class="grid">
-            <h2
-              class="mb-16 text-3xl font-bold leading-tight text-center md:text-4xl lg:text-5xl"
-            >
+            <h2 class="mb-16 text-3xl font-bold leading-tight text-center md:text-4xl lg:text-5xl">
               Our Top <span class="text-indigo-600">Restaurants</span>
             </h2>
             <ul class="flex flex-wrap justify-around gap-16 mb-16 md:flex-row">
               <li>
-                <article
-                  class="flex flex-col rounded-lg shadow-xl shadow-indigo-500/20"
-                >
+                <article class="flex flex-col rounded-lg shadow-xl shadow-indigo-500/20">
                   <picture>
-                    <source
-                      srcset="./src/assets/img/chicken-king.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="./src/assets/img/chicken-king.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="rounded"
-                      src="./src/assets/img/chicken-king.jpg"
-                      alt="fried chicken with parsley and dill"
-                      width="360"
-                      height="203"
-                      loading="lazy"
-                    />
+                    <source srcset="./src/assets/img/chicken-king.avif" type="image/avif">
+                    <source srcset="./src/assets/img/chicken-king.webp" type="image/webp">
+                    <img class="rounded" src="./src/assets/img/chicken-king.jpg" alt="fried chicken with parsley and dill" width="360" height="203" loading="lazy">
                   </picture>
                   <div class="flex flex-col gap-4 px-3 py-4">
-                    <div
-                      class="px-3 py-1 text-sm text-indigo-800 rounded w-fit md:text-base bg-emerald-100"
-                    >
+                    <div class="px-3 py-1 text-sm text-indigo-800 rounded w-fit md:text-base bg-emerald-100">
                       Healthy
                     </div>
                     <h3 class="text-xl font-semibold md:text-2xl">
                       The Chicken King
                     </h3>
-                    <div
-                      class="flex items-center justify-between text-gray-400"
-                    >
+                    <div class="flex items-center justify-between text-gray-400">
                       <div class="flex items-center gap-2">
                         <span>24min •</span>
                         <svg
@@ -1014,10 +794,7 @@
                         />
                       </svg>
                     </div>
-                    <a
-                      class="flex items-center self-center gap-1 px-3 py-1 mt-2 text-indigo-500 duration-200 border border-indigo-600 rounded outline-none focus-visible:outline-indigo-600 focus-visible:rounded focus-visible:outline-1 outline-offset-2 outline-offset-slate-100 hover:bg-indigo-600 hover:text-white"
-                      href="#!"
-                    >
+                    <a class="flex items-center self-center gap-1 px-3 py-1 mt-2 text-indigo-500 duration-200 border border-indigo-600 rounded outline-none focus-visible:outline-indigo-600 focus-visible:rounded focus-visible:outline-1 outline-offset-2 outline-offset-slate-100 hover:bg-indigo-600 hover:text-white" href="#">
                       <span>See Details</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1039,39 +816,20 @@
                 </article>
               </li>
               <li>
-                <article
-                  class="flex flex-col rounded-lg shadow-xl shadow-indigo-500/20"
-                >
+                <article class="flex flex-col rounded-lg shadow-xl shadow-indigo-500/20">
                   <picture>
-                    <source
-                      srcset="./src/assets/img/burger-king.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="./src/assets/img/burger-king.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="rounded"
-                      src="./src/assets/img/burger-king.jpg"
-                      alt="hamburger with salad and tomatoes"
-                      width="360"
-                      height="203"
-                      loading="lazy"
-                    />
+                    <source srcset="./src/assets/img/burger-king.avif" type="image/avif">
+                    <source srcset="./src/assets/img/burger-king.webp" type="image/webp">
+                    <img class="rounded" src="./src/assets/img/burger-king.jpg" alt="hamburger with salad and tomatoes" width="360" height="203" loading="lazy">
                   </picture>
                   <div class="flex flex-col gap-4 px-3 py-4">
-                    <div
-                      class="px-3 py-1 text-sm text-indigo-800 bg-orange-100 rounded w-fit md:text-base"
-                    >
+                    <div class="px-3 py-1 text-sm text-indigo-800 bg-orange-100 rounded w-fit md:text-base">
                       Trending
                     </div>
                     <h3 class="text-xl font-semibold md:text-2xl">
                       The Burger King
                     </h3>
-                    <div
-                      class="flex items-center justify-between text-gray-400"
-                    >
+                    <div class="flex items-center justify-between text-gray-400">
                       <div class="flex items-center gap-2">
                         <span>24min •</span>
                         <svg
@@ -1122,13 +880,9 @@
                         />
                       </svg>
                     </div>
-                    <a
-                      class="flex items-center self-center gap-1 px-3 py-1 mt-2 text-indigo-500 duration-200 border border-indigo-600 rounded outline-none focus-visible:outline-indigo-600 focus-visible:rounded focus-visible:outline-1 outline-offset-2 outline-offset-slate-100 hover:bg-indigo-600 hover:text-white"
-                      href="#!"
-                    >
+                    <a class="flex items-center self-center gap-1 px-3 py-1 mt-2 text-indigo-500 duration-200 border border-indigo-600 rounded outline-none focus-visible:outline-indigo-600 focus-visible:rounded focus-visible:outline-1 outline-offset-2 outline-offset-slate-100 hover:bg-indigo-600 hover:text-white" href="#">
                       <span>See Details</span>
                       <svg
-                        class=""
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="9"
@@ -1148,39 +902,20 @@
                 </article>
               </li>
               <li>
-                <article
-                  class="flex flex-col rounded-lg shadow-xl shadow-indigo-500/20"
-                >
+                <article class="flex flex-col rounded-lg shadow-xl shadow-indigo-500/20">
                   <picture>
-                    <source
-                      srcset="./src/assets/img/chicken-king.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="./src/assets/img/chicken-king.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="rounded"
-                      src="./src/assets/img/chicken-king.jpg"
-                      alt="fried chicken with parsley and dill"
-                      width="360"
-                      height="203"
-                      loading="lazy"
-                    />
+                    <source srcset="./src/assets/img/chicken-king.avif" type="image/avif">
+                    <source srcset="./src/assets/img/chicken-king.webp" type="image/webp">
+                    <img class="rounded" src="./src/assets/img/chicken-king.jpg" alt="fried chicken with parsley and dill" width="360" height="203" loading="lazy">
                   </picture>
                   <div class="flex flex-col gap-4 px-3 py-6">
-                    <div
-                      class="px-3 py-1 text-sm text-indigo-800 rounded w-fit md:text-base bg-emerald-100"
-                    >
+                    <div class="px-3 py-1 text-sm text-indigo-800 rounded w-fit md:text-base bg-emerald-100">
                       Healthy
                     </div>
                     <h3 class="text-xl font-semibold md:text-2xl">
                       The Chicken King
                     </h3>
-                    <div
-                      class="flex items-center justify-between text-gray-400"
-                    >
+                    <div class="flex items-center justify-between text-gray-400">
                       <div class="flex items-center gap-2">
                         <span>24min •</span>
                         <svg
@@ -1231,10 +966,7 @@
                         />
                       </svg>
                     </div>
-                    <a
-                      class="flex items-center self-center gap-1 px-3 py-1 mt-2 text-indigo-500 duration-200 border border-indigo-600 rounded outline-none focus-visible:outline-indigo-600 focus-visible:rounded focus-visible:outline-1 outline-offset-2 outline-offset-slate-100 hover:bg-indigo-600 hover:text-white"
-                      href="#!"
-                    >
+                    <a class="flex items-center self-center gap-1 px-3 py-1 mt-2 text-indigo-500 duration-200 border border-indigo-600 rounded outline-none focus-visible:outline-indigo-600 focus-visible:rounded focus-visible:outline-1 outline-offset-2 outline-offset-slate-100 hover:bg-indigo-600 hover:text-white" href="#">
                       <span>See Details</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1256,11 +988,7 @@
                 </article>
               </li>
             </ul>
-            <button
-              type="button"
-              aria-label="View all restaurants"
-              class="flex items-center gap-2 px-3 py-2 text-lg text-indigo-500 transition-colors duration-200 border border-indigo-600 rounded outline-none w-fit justify-self-center hover:bg-indigo-600 hover:text-white focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100"
-            >
+            <button type="button" aria-label="View all restaurants" class="flex items-center gap-2 px-3 py-2 text-lg text-indigo-500 transition-colors duration-200 border border-indigo-600 rounded outline-none w-fit justify-self-center hover:bg-indigo-600 hover:text-white focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100">
               <span>View All</span>
               <svg
                 aria-hidden="true"
@@ -1286,50 +1014,27 @@
       <section class="min-h-max mb-28 md:mb-44">
         <div class="px-8 max-w-[1248px] mx-auto">
           <div class="flex flex-col items-center">
-            <h2
-              class="mb-16 text-3xl font-bold leading-tight text-center md:text-4xl lg:text-5xl"
-            >
+            <h2 class="mb-16 text-3xl font-bold leading-tight text-center md:text-4xl lg:text-5xl">
               Our Top <span class="text-indigo-600">Dishes</span>
             </h2>
-            <ul
-              class="grid mb-16 grid-col-1 2xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-7 gap-y-14"
-            >
+            <ul class="grid mb-16 grid-col-1 2xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-7 gap-y-14">
               <li>
-                <article
-                  class="flex flex-col justify-self-center min-w-[240px] max-w-[290px] shadow-xl shadow-indigo-500/20 rounded-lg"
-                >
+                <article class="flex flex-col justify-self-center min-w-[240px] max-w-[290px] shadow-xl shadow-indigo-500/20 rounded-lg">
                   <div class="flex justify-center w-full">
                     <picture>
-                      <source
-                        srcset="./src/assets/img/swedish.avif"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="./src/assets/img/swedish.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="rounded"
-                        src="./src/assets/img/swedish.jpg"
-                        alt="Swedish salad"
-                        width="185"
-                        height="185"
-                        loading="lazy"
-                      />
+                      <source srcset="./src/assets/img/swedish.avif" type="image/avif">
+                      <source srcset="./src/assets/img/swedish.webp" type="image/webp">
+                      <img class="rounded" src="./src/assets/img/swedish.jpg" alt="Swedish salad" width="185" height="185" loading="lazy">
                     </picture>
                   </div>
                   <div class="flex flex-col gap-4 px-3 py-4">
-                    <div
-                      class="px-3 py-1 text-sm text-indigo-700 bg-orange-100 rounded w-fit md:text-base"
-                    >
+                    <div class="px-3 py-1 text-sm text-indigo-700 bg-orange-100 rounded w-fit md:text-base">
                       Trending
                     </div>
                     <h3 class="text-xl font-semibold md:text-2xl">
                       The Swe Dish
                     </h3>
-                    <div
-                      class="flex items-center justify-between text-gray-400"
-                    >
+                    <div class="flex items-center justify-between text-gray-400">
                       <div class="flex items-center gap-2">
                         <span>24min •</span>
                         <svg
@@ -1382,15 +1087,10 @@
                     </div>
                     <div class="flex items-center justify-between mt-3">
                       <div class="text-2xl font-semibold">
-                        $12.<span
-                          class="text-xl font-medium text-gray-500 dark:text-gray-400"
-                          >99</span
-                        >
+                        $12.
+                        <span class="text-xl font-medium text-gray-500 dark:text-gray-400">99</span>
                       </div>
-                      <button
-                        class="text-indigo-600 px-[2px] hover:text-indigo-700 rounded outline-none focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-2 outline-offset-2 outline-offset-slate-100"
-                        aria-label="Choose the dish"
-                      >
+                      <button class="text-indigo-600 px-[2px] hover:text-indigo-700 rounded outline-none focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-2 outline-offset-2 outline-offset-slate-100" aria-label="Choose the dish">
                         <svg
                           width="32"
                           height="32"
@@ -1427,41 +1127,22 @@
                 </article>
               </li>
               <li>
-                <article
-                  class="flex flex-col justify-self-center min-w-[240px] max-w-[290px] shadow-xl shadow-indigo-500/20 rounded-lg"
-                >
+                <article class="flex flex-col justify-self-center min-w-[240px] max-w-[290px] shadow-xl shadow-indigo-500/20 rounded-lg">
                   <div class="flex justify-center w-full">
                     <picture>
-                      <source
-                        srcset="./src/assets/img/swedish.avif"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="./src/assets/img/swedish.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="rounded"
-                        src="./src/assets/img/swedish.jpg"
-                        alt="Swedish salad"
-                        width="185"
-                        height="185"
-                        loading="lazy"
-                      />
+                      <source srcset="./src/assets/img/swedish.avif" type="image/avif">
+                      <source srcset="./src/assets/img/swedish.webp" type="image/webp">
+                      <img class="rounded" src="./src/assets/img/swedish.jpg" alt="Swedish salad" width="185" height="185" loading="lazy">
                     </picture>
                   </div>
                   <div class="flex flex-col gap-4 px-3 py-4">
-                    <div
-                      class="px-3 py-1 text-sm text-indigo-700 bg-orange-100 rounded w-fit md:text-base"
-                    >
+                    <div class="px-3 py-1 text-sm text-indigo-700 bg-orange-100 rounded w-fit md:text-base">
                       Trending
                     </div>
                     <h3 class="text-xl font-semibold md:text-2xl">
                       The Swe Dish
                     </h3>
-                    <div
-                      class="flex items-center justify-between text-gray-400"
-                    >
+                    <div class="flex items-center justify-between text-gray-400">
                       <div class="flex items-center gap-2">
                         <span>24min •</span>
                         <svg
@@ -1514,15 +1195,10 @@
                     </div>
                     <div class="flex items-center justify-between mt-3">
                       <div class="text-2xl font-semibold">
-                        $12.<span
-                          class="text-xl font-medium text-gray-500 dark:text-gray-400"
-                          >99</span
-                        >
+                        $12.
+                        <span class="text-xl font-medium text-gray-500 dark:text-gray-400">99</span>
                       </div>
-                      <button
-                        class="text-indigo-600 px-[2px] hover:text-indigo-700 rounded outline-none focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-2 outline-offset-2 outline-offset-slate-100"
-                        aria-label="Add"
-                      >
+                      <button class="text-indigo-600 px-[2px] hover:text-indigo-700 rounded outline-none focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-2 outline-offset-2 outline-offset-slate-100" aria-label="Add">
                         <svg
                           width="32"
                           height="32"
@@ -1559,41 +1235,22 @@
                 </article>
               </li>
               <li>
-                <article
-                  class="flex flex-col justify-self-center min-w-[240px] max-w-[290px] shadow-xl shadow-indigo-500/20 rounded-lg"
-                >
+                <article class="flex flex-col justify-self-center min-w-[240px] max-w-[290px] shadow-xl shadow-indigo-500/20 rounded-lg">
                   <div class="flex justify-center w-full">
                     <picture>
-                      <source
-                        srcset="./src/assets/img/swedish.avif"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="./src/assets/img/swedish.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="rounded"
-                        src="./src/assets/img/swedish.jpg"
-                        alt="Swedish salad"
-                        width="185"
-                        height="185"
-                        loading="lazy"
-                      />
+                      <source srcset="./src/assets/img/swedish.avif" type="image/avif">
+                      <source srcset="./src/assets/img/swedish.webp" type="image/webp">
+                      <img class="rounded" src="./src/assets/img/swedish.jpg" alt="Swedish salad" width="185" height="185" loading="lazy">
                     </picture>
                   </div>
                   <div class="flex flex-col gap-4 px-3 py-4">
-                    <div
-                      class="px-3 py-1 text-sm text-indigo-700 bg-orange-100 rounded w-fit md:text-base"
-                    >
+                    <div class="px-3 py-1 text-sm text-indigo-700 bg-orange-100 rounded w-fit md:text-base">
                       Trending
                     </div>
                     <h3 class="text-xl font-semibold md:text-2xl">
                       The Swe Dish
                     </h3>
-                    <div
-                      class="flex items-center justify-between text-gray-400"
-                    >
+                    <div class="flex items-center justify-between text-gray-400">
                       <div class="flex items-center gap-2">
                         <span>24min •</span>
                         <svg
@@ -1646,15 +1303,10 @@
                     </div>
                     <div class="flex items-center justify-between mt-3">
                       <div class="text-2xl font-semibold">
-                        $12.<span
-                          class="text-xl font-medium text-gray-500 dark:text-gray-400"
-                          >99</span
-                        >
+                        $12.
+                        <span class="text-xl font-medium text-gray-500 dark:text-gray-400">99</span>
                       </div>
-                      <button
-                        class="text-indigo-600 px-[2px] hover:text-indigo-700 rounded outline-none focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-2 outline-offset-2 outline-offset-slate-100"
-                        aria-label="Add"
-                      >
+                      <button class="text-indigo-600 px-[2px] hover:text-indigo-700 rounded outline-none focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-2 outline-offset-2 outline-offset-slate-100" aria-label="Add">
                         <svg
                           width="32"
                           height="32"
@@ -1691,41 +1343,22 @@
                 </article>
               </li>
               <li>
-                <article
-                  class="flex flex-col justify-self-center min-w-[240px] max-w-[290px] shadow-xl shadow-indigo-500/20 rounded-lg"
-                >
+                <article class="flex flex-col justify-self-center min-w-[240px] max-w-[290px] shadow-xl shadow-indigo-500/20 rounded-lg">
                   <div class="flex justify-center w-full">
                     <picture>
-                      <source
-                        srcset="./src/assets/img/swedish.avif"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="./src/assets/img/swedish.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="rounded"
-                        src="./src/assets/img/swedish.jpg"
-                        alt="Swedish salad"
-                        width="185"
-                        height="185"
-                        loading="lazy"
-                      />
+                      <source srcset="./src/assets/img/swedish.avif" type="image/avif">
+                      <source srcset="./src/assets/img/swedish.webp" type="image/webp">
+                      <img class="rounded" src="./src/assets/img/swedish.jpg" alt="Swedish salad" width="185" height="185" loading="lazy">
                     </picture>
                   </div>
                   <div class="flex flex-col gap-4 px-3 py-4">
-                    <div
-                      class="px-3 py-1 text-sm text-indigo-700 bg-orange-100 rounded w-fit md:text-base"
-                    >
+                    <div class="px-3 py-1 text-sm text-indigo-700 bg-orange-100 rounded w-fit md:text-base">
                       Trending
                     </div>
                     <h3 class="text-xl font-semibold md:text-2xl">
                       The Swe Dish
                     </h3>
-                    <div
-                      class="flex items-center justify-between text-gray-400"
-                    >
+                    <div class="flex items-center justify-between text-gray-400">
                       <div class="flex items-center gap-2">
                         <span>24min •</span>
                         <svg
@@ -1779,15 +1412,10 @@
                     </div>
                     <div class="flex items-center justify-between mt-3">
                       <div class="text-2xl font-semibold">
-                        $12.<span
-                          class="text-xl font-medium text-gray-500 dark:text-gray-400"
-                          >99</span
-                        >
+                        $12.
+                        <span class="text-xl font-medium text-gray-500 dark:text-gray-400">99</span>
                       </div>
-                      <button
-                        class="text-indigo-600 px-[2px] hover:text-indigo-700 rounded outline-none focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-2 outline-offset-2 outline-offset-slate-100"
-                        aria-label="Add"
-                      >
+                      <button class="text-indigo-600 px-[2px] hover:text-indigo-700 rounded outline-none focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-2 outline-offset-2 outline-offset-slate-100" aria-label="Add">
                         <svg
                           width="32"
                           height="32"
@@ -1824,41 +1452,22 @@
                 </article>
               </li>
               <li>
-                <article
-                  class="flex flex-col justify-self-center min-w-[240px] max-w-[290px] shadow-xl shadow-indigo-500/20 rounded-lg"
-                >
+                <article class="flex flex-col justify-self-center min-w-[240px] max-w-[290px] shadow-xl shadow-indigo-500/20 rounded-lg">
                   <div class="flex justify-center w-full">
                     <picture>
-                      <source
-                        srcset="./src/assets/img/swedish.avif"
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="./src/assets/img/swedish.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="rounded"
-                        src="./src/assets/img/swedish.jpg"
-                        alt="Swedish salad"
-                        width="185"
-                        height="185"
-                        loading="lazy"
-                      />
+                      <source srcset="./src/assets/img/swedish.avif" type="image/avif">
+                      <source srcset="./src/assets/img/swedish.webp" type="image/webp">
+                      <img class="rounded" src="./src/assets/img/swedish.jpg" alt="Swedish salad" width="185" height="185" loading="lazy">
                     </picture>
                   </div>
                   <div class="flex flex-col gap-4 px-3 py-4">
-                    <div
-                      class="px-3 py-1 text-sm text-indigo-700 bg-orange-100 rounded w-fit md:text-base"
-                    >
+                    <div class="px-3 py-1 text-sm text-indigo-700 bg-orange-100 rounded w-fit md:text-base">
                       Trending
                     </div>
                     <h3 class="text-xl font-semibold md:text-2xl">
                       The Swe Dish
                     </h3>
-                    <div
-                      class="flex items-center justify-between text-gray-400"
-                    >
+                    <div class="flex items-center justify-between text-gray-400">
                       <div class="flex items-center gap-2">
                         <span>24min •</span>
                         <svg
@@ -1911,15 +1520,10 @@
                     </div>
                     <div class="flex items-center justify-between mt-3">
                       <div class="text-2xl font-semibold">
-                        $12.<span
-                          class="text-xl font-medium text-gray-500 dark:text-gray-400"
-                          >99</span
-                        >
+                        $12.
+                        <span class="text-xl font-medium text-gray-500 dark:text-gray-400">99</span>
                       </div>
-                      <button
-                        class="text-indigo-600 px-[2px] hover:text-indigo-700 rounded outline-none focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-2 outline-offset-2 outline-offset-slate-100"
-                        aria-label="Add"
-                      >
+                      <button class="text-indigo-600 px-[2px] hover:text-indigo-700 rounded outline-none focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-2 outline-offset-2 outline-offset-slate-100" aria-label="Add">
                         <svg
                           width="32"
                           height="32"
@@ -1956,11 +1560,7 @@
                 </article>
               </li>
             </ul>
-            <button
-              type="button"
-              aria-label="View all dishes"
-              class="flex items-center gap-2 px-3 py-2 text-lg text-indigo-500 transition-colors duration-200 border border-indigo-600 rounded outline-none w-fit justify-self-center hover:bg-indigo-600 hover:text-white focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100"
-            >
+            <button type="button" aria-label="View all dishes" class="flex items-center gap-2 px-3 py-2 text-lg text-indigo-500 transition-colors duration-200 border border-indigo-600 rounded outline-none w-fit justify-self-center hover:bg-indigo-600 hover:text-white focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1 outline-offset-2 outline-offset-slate-100">
               <span>View All</span>
               <svg
                 aria-hidden="true"
@@ -1985,9 +1585,7 @@
 
       <section class="min-h-max mb-28 md:mb-44">
         <div class="px-8 max-w-[1248px] mx-auto">
-          <h2
-            class="mb-16 text-3xl font-bold leading-tight text-center md:text-4xl lg:text-5xl"
-          >
+          <h2 class="mb-16 text-3xl font-bold leading-tight text-center text-balance md:text-4xl lg:text-5xl">
             What Our <span class="text-indigo-600">Customers</span> Say
           </h2>
           <div class="flex flex-wrap -m-4">
@@ -2012,22 +1610,9 @@
                 </blockquote>
                 <figcaption class="inline-flex items-center">
                   <picture>
-                    <source
-                      srcset="./src/assets/img/customer.avif"
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="./src/assets/img/customer.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full"
-                      src="./src/assets/img/customer.jpg"
-                      alt="Photo of our customer"
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                    />
+                    <source srcset="./src/assets/img/customer.avif" type="image/avif">
+                    <source srcset="./src/assets/img/customer.webp" type="image/webp">
+                    <img class="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full" src="./src/assets/img/customer.jpg" alt="Photo of our customer" width="48" height="48" loading="lazy">
                   </picture>
                   <span class="flex flex-col flex-grow pl-4">
                     <span class="font-medium title-font">James Smith Jr.</span>
@@ -2037,9 +1622,7 @@
               </figure>
             </div>
             <div class="w-full p-4 md:w-1/2">
-              <figure
-                class="h-full p-8 rounded-md bg-emerald-300 bg-opacity-20"
-              >
+              <figure class="h-full p-8 rounded-md bg-emerald-300 bg-opacity-20">
                 <svg
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
@@ -2061,20 +1644,11 @@
                   <picture>
                     <source
                       srcset="./src/assets/img/customer.avif"
-                      type="image/avif"
-                    />
+                      type="image/avif">
                     <source
                       srcset="./src/assets/img/customer.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full"
-                      src="./src/assets/img/customer.jpg"
-                      alt="Photo of our customer"
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                    />
+                      type="image/webp">
+                    <img class="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full" src="./src/assets/img/customer.jpg" alt="Photo of our customer" width="48" height="48" loading="lazy">
                   </picture>
                   <span class="flex flex-col flex-grow pl-4">
                     <span class="font-medium title-font">James Smith Jr.</span>
@@ -2089,29 +1663,16 @@
 
       <section class="min-h-max mb-28 md:mb-44">
         <div class="px-8 max-w-[1248px] mx-auto">
-          <h2
-            class="mb-16 text-3xl font-bold leading-tight text-center md:text-4xl lg:text-5xl"
-          >
+          <h2 class="mb-16 text-3xl font-bold leading-tight text-center md:text-4xl lg:text-5xl">
             Frequently Asked <span class="text-indigo-600">Questions</span>
           </h2>
 
-          <div
-            class="min-h-[315px] space-y-3 text-base sm:text-lg max-w-4xl mx-auto"
-          >
+          <div class="min-h-[315px] space-y-3 text-base sm:text-lg max-w-4xl mx-auto">
             <div class="accordion">
               <h3 id="accordion1-title">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full gap-6 p-3 transition-colors border border-indigo-200 rounded outline-none cursor-pointer dark:border-gray-600 accordion-button hover:bg-indigo-50 dark:hover:bg-indigo-200 hover:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1"
-                  aria-expanded="false"
-                  aria-controls="accordion1-content"
-                >
-                  <span class="font-semibold text-left"
-                    >How long does delivery take?</span
-                  >
-                  <span
-                    class="text-indigo-700 transition-transform duration-500 chevron"
-                  >
+                <button type="button" class="flex items-center justify-between w-full gap-6 p-3 transition-colors border border-indigo-200 rounded outline-none cursor-pointer dark:border-gray-600 accordion-button hover:bg-indigo-50 dark:hover:bg-indigo-200 hover:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1" aria-expanded="false" aria-controls="accordion1-content">
+                  <span class="font-semibold text-left" >How long does delivery take?</span>
+                  <span class="text-indigo-700 transition-transform duration-500 chevron">
                     <svg
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2131,17 +1692,9 @@
                   </span>
                 </button>
               </h3>
-              <div
-                id="accordion1-content"
-                aria-hidden="true"
-                role="region"
-                aria-labelledby="accordion1-title"
-                class="accordion-content grid closed grid-rows-[0fr] ['transition: grid-rows'] duration-500"
-              >
+              <div id="accordion1-content" aria-hidden="true" role="region" aria-labelledby="accordion1-title" class="accordion-content grid closed grid-rows-[0fr] ['transition: grid-rows'] duration-500">
                 <div class="overflow-hidden">
-                  <p
-                    class="px-4 pt-4 pb-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400"
-                  >
+                  <p class="px-4 pt-4 pb-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quia sit quidem, dicta odio autem soluta.
                   </p>
@@ -2151,16 +1704,9 @@
 
             <div class="accordion">
               <h3 id="accordion2-title">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full gap-6 p-3 transition-colors border border-indigo-200 rounded outline-none cursor-pointer dark:border-gray-600 accordion-button hover:bg-indigo-50 dark:hover:bg-indigo-200 hover:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1"
-                  aria-expanded="false"
-                  aria-controls="accordion2-content"
-                >
+                <button type="button" class="flex items-center justify-between w-full gap-6 p-3 transition-colors border border-indigo-200 rounded outline-none cursor-pointer dark:border-gray-600 accordion-button hover:bg-indigo-50 dark:hover:bg-indigo-200 hover:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1" aria-expanded="false" aria-controls="accordion2-content">
                   <span class="font-semibold text-left">How does It Work?</span>
-                  <span
-                    class="text-indigo-700 transition-transform duration-500 chevron"
-                  >
+                  <span class="text-indigo-700 transition-transform duration-500 chevron">
                     <svg
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2180,17 +1726,9 @@
                   </span>
                 </button>
               </h3>
-              <div
-                id="accordion2-content"
-                aria-hidden="true"
-                role="region"
-                aria-labelledby="accordion2-title"
-                class="accordion-content grid closed grid-rows-[0fr] ['transition: grid-rows'] duration-500"
-              >
+              <div id="accordion2-content" aria-hidden="true" role="region" aria-labelledby="accordion2-title" class="accordion-content grid closed grid-rows-[0fr] ['transition: grid-rows'] duration-500">
                 <div class="overflow-hidden">
-                  <p
-                    class="px-4 pt-4 pb-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400"
-                  >
+                  <p class="px-4 pt-4 pb-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quia sit quidem, dicta odio autem soluta.
                   </p>
@@ -2200,18 +1738,9 @@
 
             <div class="accordion">
               <h3 id="accordion3-title">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full gap-6 p-3 transition-colors border border-indigo-200 rounded outline-none cursor-pointer dark:border-gray-600 accordion-button hover:bg-indigo-50 dark:hover:bg-indigo-200 hover:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1"
-                  aria-expanded="false"
-                  aria-controls="accordion3-content"
-                >
-                  <span class="font-semibold text-left"
-                    >How does your food delivery service work?</span
-                  >
-                  <span
-                    class="text-indigo-700 transition-transform duration-500 chevron"
-                  >
+                <button type="button" class="flex items-center justify-between w-full gap-6 p-3 transition-colors border border-indigo-200 rounded outline-none cursor-pointer dark:border-gray-600 accordion-button hover:bg-indigo-50 dark:hover:bg-indigo-200 hover:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1" aria-expanded="false" aria-controls="accordion3-content">
+                  <span class="font-semibold text-left" >How does your food delivery service work?</span>
+                  <span class="text-indigo-700 transition-transform duration-500 chevron">
                     <svg
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2231,17 +1760,9 @@
                   </span>
                 </button>
               </h3>
-              <div
-                id="accordion3-content"
-                aria-hidden="true"
-                role="region"
-                aria-labelledby="accordion3-title"
-                class="accordion-content grid closed grid-rows-[0fr] ['transition: grid-rows'] duration-500"
-              >
+              <div id="accordion3-content" aria-hidden="true" role="region" aria-labelledby="accordion3-title" class="accordion-content grid closed grid-rows-[0fr] ['transition: grid-rows'] duration-500">
                 <div class="overflow-hidden">
-                  <p
-                    class="px-4 pt-4 pb-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400"
-                  >
+                  <p class="px-4 pt-4 pb-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quia sit quidem, dicta odio autem soluta.
                   </p>
@@ -2251,18 +1772,9 @@
 
             <div class="accordion">
               <h3 id="accordion4-title">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full gap-6 p-3 transition-colors border border-indigo-200 rounded outline-none cursor-pointer dark:border-gray-600 accordion-button hover:bg-indigo-50 dark:hover:bg-indigo-200 hover:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1"
-                  aria-expanded="false"
-                  aria-controls="accordion4-content"
-                >
-                  <span class="font-semibold text-left"
-                    >What payment options do you accept?</span
-                  >
-                  <span
-                    class="text-indigo-700 transition-transform duration-500 chevron"
-                  >
+                <button type="button" class="flex items-center justify-between w-full gap-6 p-3 transition-colors border border-indigo-200 rounded outline-none cursor-pointer dark:border-gray-600 accordion-button hover:bg-indigo-50 dark:hover:bg-indigo-200 hover:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1" aria-expanded="false" aria-controls="accordion4-content">
+                  <span class="font-semibold text-left" >What payment options do you accept?</span>
+                  <span class="text-indigo-700 transition-transform duration-500 chevron">
                     <svg
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2282,17 +1794,9 @@
                   </span>
                 </button>
               </h3>
-              <div
-                id="accordion4-content"
-                aria-hidden="true"
-                role="region"
-                aria-labelledby="accordion4-title"
-                class="accordion-content grid closed grid-rows-[0fr] ['transition: grid-rows'] duration-500"
-              >
+              <div id="accordion4-content" aria-hidden="true" role="region" aria-labelledby="accordion4-title" class="accordion-content grid closed grid-rows-[0fr] ['transition: grid-rows'] duration-500">
                 <div class="overflow-hidden">
-                  <p
-                    class="px-4 pt-4 pb-1 text-base font-medium leading-6 text-justify text-gray-500 dark:text-gray-400"
-                  >
+                  <p class="px-4 pt-4 pb-1 text-base font-medium leading-6 text-justify text-gray-500 dark:text-gray-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quia sit quidem, dicta odio autem soluta.
                   </p>
@@ -2302,18 +1806,9 @@
 
             <div class="accordion">
               <h3 id="accordion5-title">
-                <button
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="accordion5-content"
-                  class="flex items-center justify-between w-full gap-6 p-3 transition-colors border border-indigo-200 rounded outline-none cursor-pointer dark:border-gray-600 accordion-button hover:bg-indigo-50 dark:hover:bg-indigo-200 hover:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1"
-                >
-                  <span class="font-semibold text-left"
-                    >Do you offer discounts or promotions?</span
-                  >
-                  <span
-                    class="text-indigo-700 transition-transform duration-500 chevron"
-                  >
+                <button type="button" aria-expanded="false" aria-controls="accordion5-content" class="flex items-center justify-between w-full gap-6 p-3 transition-colors border border-indigo-200 rounded outline-none cursor-pointer dark:border-gray-600 accordion-button hover:bg-indigo-50 dark:hover:bg-indigo-200 hover:text-indigo-600 focus-visible:outline-indigo-600 focus-visible:text-indigo-600 focus-visible:outline-1">
+                  <span class="font-semibold text-left" >Do you offer discounts or promotions?</span>
+                  <span class="text-indigo-700 transition-transform duration-500 chevron">
                     <svg
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2333,17 +1828,9 @@
                   </span>
                 </button>
               </h3>
-              <div
-                id="accordion5-content"
-                aria-hidden="true"
-                role="region"
-                aria-labelledby="accordion5-title"
-                class="accordion-content grid closed grid-rows-[0fr] ['transition: grid-rows'] duration-500"
-              >
+              <div id="accordion5-content" aria-hidden="true" role="region" aria-labelledby="accordion5-title" class="accordion-content grid closed grid-rows-[0fr] ['transition: grid-rows'] duration-500">
                 <div class="overflow-hidden">
-                  <p
-                    class="px-4 pt-4 pb-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400"
-                  >
+                  <p class="px-4 pt-4 pb-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quia sit quidem, dicta odio autem soluta. Lorem ipsum dolor
                     sit amet, consectetur adipisicing elit. Repudiandae, libero!
@@ -2360,21 +1847,12 @@
           <h2 class="sr-only">
             Subscribe to our newsletter for application guidance
           </h2>
-          <div
-            class="grid w-full grid-cols-1 gap-12 px-10 py-16 rounded-lg md:gap-4 md:grid-cols-2 bg-emerald-500"
-          >
+          <div class="grid w-full grid-cols-1 gap-12 px-10 py-16 rounded-lg md:gap-4 md:grid-cols-2 bg-emerald-500">
             <div class="w-full space-y-7 place-self-center">
-              <h3
-                class="text-4xl font-bold text-center text-white uppercase lg:text-5xl md:text-left"
-              >
+              <h3 class="text-4xl font-bold text-center text-white uppercase lg:text-5xl md:text-left">
                 Get 50% off
               </h3>
-              <form
-                action="#"
-                method="post"
-                enctype="text/plain"
-                class="flex flex-col subscribe-form"
-              >
+              <form action="#" method="post" enctype="text/plain" class="flex flex-col subscribe-form">
                 <div class="flex flex-col gap-2 mb-3 2xs:flex-row">
                   <label for="subscribe-input" class="sr-only">Email</label>
                   <input
@@ -2385,38 +1863,20 @@
                     aria-describedby="status-message"
                     placeholder="Enter Your Email"
                     class="w-full p-2 border-2 border-transparent rounded bg-slate-200 focus:outline-none focus-visible:border-2 focus-visible:border-indigo-600 focus-visible:bg-white text-slate-800 placeholder:text-slate-500"
-                  />
-                  <button
-                    type="submit"
-                    class="px-3 py-2 text-white transition-colors duration-200 bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 focus:outline-none focus-visible:outline-indigo-600 focus-visible:outline-2 outline-offset-4 focus-visible:outline-offset-slate-100"
                   >
+                  <button type="submit" class="px-3 py-2 text-white transition-colors duration-200 bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 focus:outline-none focus-visible:outline-indigo-600 focus-visible:outline-2 outline-offset-4 focus-visible:outline-offset-slate-100">
                     Subscribe
                   </button>
                 </div>
 
-                <p
-                  id="status-message"
-                  class="invisible mb-4 text-sm text-white min-h-5"
-                ></p>
+                <p id="status-message" class="invisible mb-4 text-sm text-white min-h-5"></p>
               </form>
             </div>
             <div class="place-self-center">
               <picture>
-                <source
-                  srcset="./src/assets/img/chicken-salad.avif"
-                  type="image/avif"
-                />
-                <source
-                  srcset="./src/assets/img/chicken-salad.webp"
-                  type="image/webp"
-                />
-                <img
-                  class="rounded-full"
-                  src="./src/assets/img/chicken-salad.png"
-                  alt="Salad with chicken fillets"
-                  width="200"
-                  height="200"
-                />
+                <source srcset="./src/assets/img/chicken-salad.avif" type="image/avif">
+                <source srcset="./src/assets/img/chicken-salad.webp" type="image/webp">
+                <img class="rounded-full" src="./src/assets/img/chicken-salad.png" alt="Salad with chicken fillets" width="200" height="200">
               </picture>
             </div>
           </div>
@@ -2424,21 +1884,12 @@
       </section>
     </main>
 
-    <footer
-      class="border-t bg-slate-100 dark:bg-inherit border-t-slate-200/60 dark:border-t-slate-200/20 text-slate-400"
-    >
+    <footer class="border-t bg-slate-100 dark:bg-inherit border-t-slate-200/60 dark:border-t-slate-200/20 text-slate-400">
       <div class="px-8 max-w-[1248px] mx-auto">
         <div class="flex flex-col items-center justify-center gap-10 py-10">
           <ul class="flex items-center gap-14">
-            <li
-              class="p-1 transition-transform duration-300 rounded-sm outline-none hover:scale-125 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-            >
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Read more about us on Instagram"
-              >
+            <li class="p-1 transition-transform duration-300 rounded-sm outline-none hover:scale-125 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Read more about us on Instagram">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -2493,15 +1944,8 @@
                 </svg>
               </a>
             </li>
-            <li
-              class="p-1 transition-transform duration-300 rounded-sm outline-none hover:scale-125 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-            >
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Read more about us on Linkedin"
-              >
+            <li class="p-1 transition-transform duration-300 rounded-sm outline-none hover:scale-125 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Read more about us on Linkedin">
                 <svg
                   width="22"
                   height="21"
@@ -2518,15 +1962,8 @@
                 </svg>
               </a>
             </li>
-            <li
-              class="p-1 transition-transform duration-300 rounded-sm outline-none hover:scale-125 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-            >
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Read more about us on Facebook"
-              >
+            <li class="p-1 transition-transform duration-300 rounded-sm outline-none hover:scale-125 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Read more about us on Facebook">
                 <svg
                   width="11"
                   height="22"
@@ -2543,15 +1980,8 @@
                 </svg>
               </a>
             </li>
-            <li
-              class="p-1 transition-transform duration-300 rounded-sm outline-none hover:scale-125 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100"
-            >
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Read more about us on Twitter"
-              >
+            <li class="p-1 transition-transform duration-300 rounded-sm outline-none hover:scale-125 focus-visible:outline-indigo-600 focus-visible:outline-1 outline-offset-4 outline-offset-slate-100">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Read more about us on Twitter">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

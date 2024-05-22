@@ -2,7 +2,7 @@ export function cookiesHandler() {
   const eatlyCookie = "eatly-cookie";
   const dialog = document.querySelector("#eatly-cookie");
 
-   function getCookie(name) {
+   async function getCookie(name) {
     if (window.cookieStore) {
       return cookieStore.get(name);
     } else {
@@ -14,7 +14,7 @@ export function cookiesHandler() {
     }
   }
 
-   function setCookie(name, value) {
+   async function setCookie(name, value) {
     const expiration = new Date();
     expiration.setMonth(expiration.getMonth() + 6);
 
@@ -36,7 +36,6 @@ export function cookiesHandler() {
       }
     } else {
       dialog.show();
-
       dialog.addEventListener("close", () => {
         const value = dialog.returnValue;
         setCookie(eatlyCookie, value);

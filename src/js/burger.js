@@ -9,7 +9,7 @@ export function burger() {
     burgerBtn?.setAttribute('aria-label', 'Close menu');
     mobileMenu?.classList.remove('translate-x-full');
     mobileMenu.setAttribute('aria-hidden', 'false');
-    // disableScroll();
+    document.documentElement.style.overflowY = 'hidden';
   };
 
   const closeBurgerMenu = () => {
@@ -18,7 +18,7 @@ export function burger() {
     burgerBtn?.setAttribute('aria-label', 'Open menu');
     mobileMenu?.classList.add('translate-x-full');
     mobileMenu.setAttribute('aria-hidden', 'true');
-    // enableScroll();
+    document.documentElement.style.overflowY = '';
   };
 
   burgerBtn.addEventListener('click', () => {
@@ -39,23 +39,3 @@ export function burger() {
 }
 
 
-// const disableScroll = () => {
-
-//   const pagePosition = window.scrollY;
-//   body.dataset.position = pagePosition;
-//   body.classList.add('scroll-off');
-//   body.style.top = `-${pagePosition}px`;
-//   document.documentElement.classList.remove('scroll-smooth');
-// };
-
-// const enableScroll = () => {
-
-//   const pagePosition = parseInt(body.dataset.position, 10);
-//   body.classList.remove('scroll-off');
-//   window.scroll({
-//     top: pagePosition,
-//     left: 0,
-//   });
-//   body.removeAttribute('data-position');
-//   document.documentElement.classList.add('scroll-smooth');
-// };
