@@ -9,6 +9,8 @@ export function burger() {
     burgerBtn?.setAttribute('aria-label', 'Close menu');
     mobileMenu?.classList.remove('translate-x-full');
     mobileMenu.setAttribute('aria-hidden', 'false');
+    mobileMenu.removeAttribute('inert', 'false')
+
   };
 
   const closeBurgerMenu = () => {
@@ -17,6 +19,8 @@ export function burger() {
     burgerBtn?.setAttribute('aria-label', 'Open menu');
     mobileMenu?.classList.add('translate-x-full');
     mobileMenu.setAttribute('aria-hidden', 'true');
+    mobileMenu.setAttribute('inert', 'true')
+
   };
 
   burgerBtn.addEventListener('click', () => {
