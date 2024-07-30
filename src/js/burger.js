@@ -10,6 +10,7 @@ export function burger() {
     mobileMenu?.classList.remove('translate-x-full');
     mobileMenu.setAttribute('aria-hidden', 'false');
     mobileMenu.removeAttribute('inert', 'false')
+    document.documentElement.style.overflowY = 'hidden';
 
   };
 
@@ -20,6 +21,7 @@ export function burger() {
     mobileMenu?.classList.add('translate-x-full');
     mobileMenu.setAttribute('aria-hidden', 'true');
     mobileMenu.setAttribute('inert', 'true')
+    document.documentElement.style.overflowY = '';
 
   };
 
